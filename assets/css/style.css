@@ -1,6 +1,3 @@
-/*Importando fonte*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 :root {
     --bg-color: #f5f5f5;
     --font-color: #222;
@@ -23,7 +20,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 body{
     padding: 30px;
@@ -192,3 +189,41 @@ section article div h3{
     margin-left: 10px;
     font-size: 1rem;
   }
+  #pix{
+    max-width: 600px;
+    margin: 25px auto;
+  }
+  #pix article{
+    margin: 20px;
+    background-color: #28a745;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #pix article h2, #pix article p, #pix article h4{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  #pix article p{
+    margin: 15px 0px;
+    font-size: 1.1rem;
+  }
+  #pix article h4{
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  #pix article button{
+    background-color: #1f7533;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+
