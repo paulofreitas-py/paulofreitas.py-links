@@ -26,3 +26,11 @@ const temaToggle = document.querySelector(
   
   temaToggle.addEventListener("change", switchTema, false);
   
+
+  document.querySelector("button").addEventListener("click",
+  function (event) {
+          document.querySelector("h4").focus()
+          document.execCommand('selectAll', false, null)
+          document.execCommand('copy')
+          document.querySelector("button").innerText = 'Copiado!'
+  })
