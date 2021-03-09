@@ -29,8 +29,11 @@ const temaToggle = document.querySelector(
 
   document.querySelector("button").addEventListener("click",
   function (event) {
-          document.querySelector("h4").focus()
-          document.execCommand('selectAll', false, null)
-          document.execCommand('copy')
-          document.querySelector("button").innerText = 'Copiado!'
+    var textRange = document.createRange()
+    textRange.selectNode(document.getElementById("chave"))
+    window.getSelection().removeAllRanges()
+    window.getSelection().addRange(textRange)
+    document.execCommand("copy")
+    window.getSelection().removeAllRanges()
+    document.querySelector("button").innerText = 'Copiado!'
   })
