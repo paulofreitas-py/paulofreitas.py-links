@@ -1,33 +1,31 @@
-const temaToggle = document.querySelector(
-    '.theme-switch input[type="checkbox"]'
-  );
+//Dark mode
+const alterarTema = document.querySelector(
+  '.mudar-tema input[type="checkbox"]'
+);
   
-  const temaAtual = localStorage.getItem("tema");
+const temaAtual = localStorage.getItem("tema");
 
-  if (temaAtual) {
-    
-    document.documentElement.setAttribute("data-tema", temaAtual);
-
-    if (temaAtual === "dark") {
-      temaToggle.checked = true;
-    }
+if (temaAtual) {
+  document.documentElement.setAttribute("data-tema", temaAtual);
+  if (temaAtual === "dark") {
+    alterarTema.checked = true;
   }
+}
   
- 
-  function switchTema(e) {
-    if (e.target.checked) {
-      document.documentElement.setAttribute("data-tema", "dark");
-      localStorage.setItem("tema", "dark");
-    } else {
-      document.documentElement.setAttribute("data-tema", "light");
-      localStorage.setItem("tema", "light");
-    }
+function mudarTema(e) {
+  if (e.target.checked) {
+    document.documentElement.setAttribute("data-tema", "dark");
+    localStorage.setItem("tema", "dark");
+  }else {
+    document.documentElement.setAttribute("data-tema", "light");
+    localStorage.setItem("tema", "light");
   }
+}
   
-  temaToggle.addEventListener("change", switchTema, false);
+alterarTema.addEventListener("change", mudarTema, false);
   
-
-  document.querySelector("button").addEventListener("click",
+//Cópiar chave PIX
+document.querySelector("button").addEventListener("click",
   function (event) {
     var textRange = document.createRange()
     textRange.selectNode(document.getElementById("chave"))
@@ -36,4 +34,4 @@ const temaToggle = document.querySelector(
     document.execCommand("copy")
     window.getSelection().removeAllRanges()
     document.querySelector("button").innerText = 'Copiado!'
-  })
+})

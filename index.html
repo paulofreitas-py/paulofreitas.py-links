@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/css/style.css">
     <title>iuricode | LinkDev</title>
 </head>
 
 <body>
-    <main>
-        <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-              <input type="checkbox" id="checkbox" />
-              <div class="slider">
-                <svg
+
+    <section class="mudar-tema-wrapper">
+        <label class="mudar-tema" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider">
+            <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
@@ -26,8 +26,8 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="feather feather-sun"
-              >
+                class="feather efeito-sol"
+            >
                 <circle cx="12" cy="12" r="5"></circle>
                 <line x1="12" y1="1" x2="12" y2="3"></line>
                 <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -37,8 +37,8 @@
                 <line x1="21" y1="12" x2="23" y2="12"></line>
                 <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                 <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-              </svg>
-              <svg
+            </svg>
+            <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
@@ -48,20 +48,23 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="feather feather-moon"
-              >
+                class="feather efeito-lua"
+            >
                 <path
-                  d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                 d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
                 ></path>
-              </svg>
-              </div>
-            </label>
-          </div>
-        <header>
-            <img src="https://avatars2.githubusercontent.com/u/31936044" alt="Foto iuricode">
-            <h1>Iuri Silva</h1>
-            <p>@iuricode</p>
-        </header>
+            </svg>
+        </div>
+        </label>
+    </section>
+
+    <header>
+        <img src="https://avatars2.githubusercontent.com/u/31936044" alt="Foto iuricode">
+        <h1>Iuri Silva</h1>
+        <p>@iuricode</p>
+    </header>
+
+    <main>
         <section>
             <article>
                 <a href="https://www.instagram.com/iuricode/">
@@ -73,7 +76,6 @@
                         </h3>
                     </div>
                 </a>
-
                 <a href="https://github.com/iuricode">
                     <div style="background: linear-gradient(58deg, #722CD8 8%, #9A56FD 98%);">
                         <img src="assets/image/github.png" alt="Logo GitHub">
@@ -82,7 +84,6 @@
                         </h3>
                     </div>
                 </a>
-
                 <a href="https://www.linkedin.com/in/iuricode/">
                     <div style="  background: rgb(111,139,231);
                     background: linear-gradient(90deg, rgba(111,139,231,1) 0%, rgba(47,41,157,1) 100%);  ">
@@ -92,7 +93,6 @@
                         </h3>
                     </div>
                 </a>
-
                 <a href="https://raw.githubusercontent.com/iuricode/front-end-do-zero/main/front-end%20do%20zero.pdf">
                     <div
                         style=" background: rgb(143,11,131); background: linear-gradient(90deg, rgba(143,11,131,1) 0%, rgb(88, 7, 82) 100%); ">
@@ -104,12 +104,12 @@
                 </a>
             </article>
         </section>
+
         <section id="pix">
             <article>
                 <h2>pix para o café ☕</h2>
                 <p>chave pix</p>
                 <h4 id="chave">489.603.118-04</h4>
-            
                 <button id="copy">Copiar Texto</button>
             </article>
         </section>
