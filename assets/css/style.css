@@ -84,9 +84,10 @@ section article div{
 section article div:hover{
   border: 3px solid var(--bg-color2);
 }
-section article div img{
-  width: 25px;
+section article div .iconify{
+  font-size: 26px;
   margin-bottom: 10px;
+  color: #fff;
 }
 section article div h3{
   text-align: center;
