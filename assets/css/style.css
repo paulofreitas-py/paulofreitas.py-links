@@ -69,10 +69,10 @@ section article a{
   flex-basis: 200px;
   justify-content: space-between;
   flex-grow: 1;
-  gap: 20px;
+  margin: 20px;
 }
 iframe {
-  margin: 20px;
+  margin: 40px;
   max-width: 600px;
   margin: 0 auto;
 }
