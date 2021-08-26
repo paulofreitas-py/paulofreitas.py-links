@@ -69,7 +69,7 @@ section article a{
   flex-basis: 200px;
   justify-content: space-between;
   flex-grow: 1;
-  margin: 20px;
+  gap: 20px;
 }
 iframe {
   margin: 20px;
