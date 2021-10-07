@@ -1,226 +1,184 @@
-/*Root*/
-:root {
-  --bg-color: #f5f5f5;
-  --bg-color2: #040404;
-  --font-color: #222;
-  --font-color-2: #57269f;
-  --font-color-3: #c0c0c0;
-  --font-color-4: #fff;
+/*Fonte*/
+@font-face {
+  font-family: "Circular Std";
+  src: local("Circular Std Medium"), local("Circular-Std-Medium"),
+    url("../fonts/CircularStd.ttf") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
-[data-tema=dark] {
-  --bg-color: #17171C;
-  --bg-color2: #f5f5f5;
-  --font-color: #fff;
-  --font-color-2: #57269f;
-  --font-color-3: #c0c0c0;
-  --font-color-4: #fff;
+
+/*Variáveis*/
+:root {
+  --bg-color: #131219;
+  --bg-color2: #17161d;
+
+  --color-white: #fefbfb;
+  --color-grey: #c9c9c9;
 }
 
 /*Reset*/
 * {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
 }
-body{
-  padding: 30px;
-  color: #fff;
-  color: var(--font-color);
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 500;
+  color: var(--color-white);
+}
+button,
+input {
+  border: 0;
+}
+body {
+  padding: 3.2rem;
+  color: var(--font-color-1);
   background-color: var(--bg-color);
+  font-family: "Circular Std";
 }
-
-/*Centralizar conteúdo*/
 html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--color-white);
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--bg-color2);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #6610f2;
+  border-radius: 4px;
 }
 
 /*Header*/
-header{
+header {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 3.2rem;
 }
-header img{
+header img {
   height: 125px;
   width: 125px;
   border-radius: 50%;
-  margin-bottom: 30px;    
+  margin-bottom: 3rem;
 }
-header p{
-  font-size: 120%;
-  color: var(--font-color-3);
+header h1{
+  font-size: 3.2rem;
+}
+header p {
+  margin-top: 0.8rem;
+  font-size: 2rem;
+  color: var(--color-grey);
 }
 
 /*Cards sociais*/
-section article{
+section div {
   display: flex;
   justify-items: center;
   flex-wrap: wrap;
   max-width: 600px;
   margin: 0 auto;
+  gap: 1.6rem;
 }
-section article a{
+section div a {
   text-decoration: none;
   flex-basis: 200px;
   justify-content: space-between;
   flex-grow: 1;
-  margin: 10px;
 }
-iframe {
-  max-width: 600px;
-  margin: 20px auto 0px auto;
-}
-section article div{
+section div article {
   min-height: 100px;
-  border-radius: 8px;
+  border-radius: 4px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4px;
-  border: 3px solid var(--bg-color);
+  padding: 0.4rem;
 }
-section article div:hover{
-  border: 3px solid var(--bg-color2);
+section div article img{
+  width: 28px;
+  margin-right: 1.6rem;
 }
-section article div .iconify{
-  font-size: 26px;
-  margin-bottom: 10px;
-  color: #fff;
-}
-section article div h3{
+section div article h2 {
   text-align: center;
-  line-height: 23px;
-  font-weight: 500;
-  font-size: 16px;
-  color: var(--font-color-4);
+  font-size: 2rem;
 }
 
 /*Card PIX*/
-#pix{
+#pix {
   max-width: 600px;
-  margin: 25px auto;
+  margin: 2.4rem auto;
 }
-#pix article{
-  margin: 20px;
-  background-color: #28a745;
-  padding: 30px;
-  border-radius: 5px;
+#pix div {
+  background-color: var(--bg-color2);
+  padding: 1.6rem;
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-#pix article h2, 
-#pix article p, 
-#pix article h4{
-  color: #fff;
-  font-weight: 600;
+#pix div h2 {
+  font-size: 2.4rem;
 }
-#pix article p{
-  margin: 15px 0px;
-  font-size: 1.1rem;
+#pix div p {
+  margin-top: 2.4rem;
+  font-size: 2.4rem;
 }
-#pix article h4{
-  margin-bottom: 25px;
-  font-weight: 500;
-  font-size: 1.3rem;
+#pix div h3 {
+  margin-bottom: 2.4rem;
+  font-size: 2rem;
 }
-#pix article button{
-  background-color: #1f7533;
-  border: 0;
-  border-radius: 8px;
-  padding: 10px;
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-#pix article button:hover{
-  background-color: #185727;
+#pix div button {
+  background: linear-gradient(
+    225deg,
+    rgba(102, 16, 242, 0.3) 0%,
+    var(--bg-color) 100%
+  );
+  border: 1px solid rgba(102, 16, 242, 0.5);
+  border-radius: 4px;
+  padding: 1.2rem;
+  font-size: 2rem;
+  color: var(--color-white);
   cursor: pointer;
 }
-
-/*Dark mode*/
-.mudar-tema-wrapper {
-  display: flex;
-  justify-content: flex-end;
-}
-.mudar-tema-wrapper em {
-  margin-left: 10px;
-  font-size: 1rem;
-}
-.mudar-tema {
-  display: inline-block;
-  height: 34px;
-  position: relative;
-  width: 60px;
-}
-.mudar-tema input {
-  display: none;
-}
-.slider {
-  background-color: #0e0e0e;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 0.4s;
-  border-radius: 34px;
-}
-.slider:before {
-  background-color: #fff;
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 26px;
-  border-radius: 50%;
-}
-input:checked + .slider {
-  background-color: #57269f;
-}
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
-.slider svg {
-  color: #fff;
-  position: absolute;
-  transition: opacity 0.2s ease 0s, transform 0.35s ease 0s;
-  pointer-events: none;
-}
-.efeito-lua {
-  opacity: 0;
-  left: 9px;
-  bottom: 9px;
-  transform: translateX(4px);
-}
-.efeito-sol {
-  opacity: 1;
-  right: 10px;
-  bottom: 9px;
-  transform: translateX(0px);
-}
-input:checked + .slider .efeito-lua {
-  opacity: 1;
-  transform: translateX(0);
-}
-input:checked + .slider .efeito-sol {
-  opacity: 0;
-  transform: translateX(-4px);
-}
-.mudar-tema-wrapper {
-  display: flex;
-  align-items: center;
-}
-.mudar-tema-wrapper em {
-  margin-left: 10px;
-  font-size: 1rem;
+#pix div button:hover {
+  background: linear-gradient(
+      225deg,
+      rgba(102, 16, 242, 0.6) 0%,
+      var(--bg-color) 100%
+    );
 }
