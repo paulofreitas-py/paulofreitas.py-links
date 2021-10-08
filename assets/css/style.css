@@ -128,6 +128,11 @@ section div article {
   justify-content: center;
   align-items: center;
   padding: 0.4rem;
+  border: 2px solid var(--bg-color);
+}
+section div article:hover {
+  border-radius: 5px;
+  border: 2px solid var(--color-white);
 }
 section div article img{
   width: 28px;
