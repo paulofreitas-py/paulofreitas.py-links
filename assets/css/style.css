@@ -138,6 +138,12 @@ section div article img{
   width: 28px;
   margin-right: 1.6rem;
 }
+section div article #parceria {
+  width: 200px;
+}
+section div a:nth-child(1){
+  flex-basis: 800px;
+}
 section div article h2 {
   text-align: center;
   font-size: 2rem;
