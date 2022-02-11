@@ -1,20 +1,12 @@
-/*Fonte*/
-@font-face {
-  font-family: "Circular Std";
-  src: local("Circular Std Medium"), local("Circular-Std-Medium"),
-    url("../fonts/CircularStd.ttf") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
 /*Variáveis*/
 :root {
-  --bg-color: #131219;
+  --bg-color: #0e091b;
   --bg-color2: #17161d;
 
   --color-white: #fefbfb;
   --color-grey: #c9c9c9;
+  --font-main: "IBM Plex Sans";
+  --font-secondary: "DM Sans";
 }
 
 /*Reset*/
@@ -59,10 +51,10 @@ input {
   border: 0;
 }
 body {
-  padding: 3.2rem;
+  padding: 6rem 3.2rem;
   color: var(--font-color-1);
   background-color: var(--bg-color);
-  font-family: "Circular Std";
+  font-family: var(--font-main);
 }
 html {
   scroll-behavior: smooth;
@@ -89,15 +81,15 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 3.2rem;
+  margin-bottom: 4.8rem;
 }
 header img {
   height: 125px;
   width: 125px;
   border-radius: 50%;
-  margin-bottom: 3rem;
+  margin-bottom: 3.2rem;
 }
-header h1{
+header h1 {
   font-size: 3.2rem;
 }
 header p {
@@ -134,7 +126,7 @@ section div article:hover {
   border-radius: 5px;
   border: 2px solid var(--color-white);
 }
-section div article img{
+section div article img {
   width: 28px;
   margin-right: 1.6rem;
 }
@@ -185,8 +177,8 @@ section div article h2 {
 }
 #pix div button:hover {
   background: linear-gradient(
-      225deg,
-      rgba(102, 16, 242, 0.6) 0%,
-      var(--bg-color) 100%
-    );
+    225deg,
+    rgba(102, 16, 242, 0.6) 0%,
+    var(--bg-color) 100%
+  );
 }
