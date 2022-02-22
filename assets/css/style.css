@@ -130,8 +130,9 @@ section div article img {
   width: 28px;
   margin-right: 1.6rem;
 }
-section div article #parceria {
-  width: 200px;
+section div #ebook {
+  flex-grow: 1;
+  flex-basis: 600px;
 }
 section div article h2 {
   text-align: center;
