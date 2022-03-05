@@ -1,5 +1,5 @@
 <h1 align="center">
-🔗<br>bio - iuricode
+☕<br>Bio - Iuri Silva
 </h1>
 
 ![Resultado final do projeto](assets/image/resultado.png)
