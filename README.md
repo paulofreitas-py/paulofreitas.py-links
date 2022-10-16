@@ -6,7 +6,7 @@
 
 <h4 align="center"><a href="https://www.iuricode.com/bio/">Clique para visitar o projeto</a></h4>
 
-<p align="center">Inspirado na <a href="https://www.instagram.com/girl.coding/">girl.coding</a></p>
+<p align="center">Inspirado na Bio da <a href="https://www.instagram.com/girl.coding/">girl.coding</a></p>
 
 ---
 
