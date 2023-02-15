@@ -31,21 +31,29 @@ section {
     }
 
     article {
-      min-height: $gap-8;
       @include flexbox-center();
+      min-height: $gap-8;
       padding: $gap-1;
       border-radius: 4px;
       &:hover img {
         width: 32px;
       }
+
+      &:hover #efront {
+        width: 88px;
+      }
+
       img {
         width: 28px;
         margin-right: $gap-2;
         transition: 0.4s;
       }
-      #parceria {
-        width: 88px;
+
+      #efront {
+        width: 80px;
+        margin-right: 0;
       }
+
       h2 {
         text-align: center;
         font-size: 2.4rem;
