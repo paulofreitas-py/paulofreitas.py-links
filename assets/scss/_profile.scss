@@ -9,16 +9,13 @@ header {
     border-radius: 50%;
     margin-bottom: $gap-3;
     transition: 0.2s;
-    &:hover {
-      outline: 4px solid $color-white;
-    }
   }
 
   h1 {
     font-size: 4rem;
     font-weight: 500;
   }
-  
+
   p {
     margin-top: $gap-1;
     font-size: 2.4rem;
