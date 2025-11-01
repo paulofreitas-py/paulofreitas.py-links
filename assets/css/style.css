@@ -6,6 +6,8 @@
   --font-color-2: #57269f;
   --font-color-3: #c0c0c0;
   --font-color-4: #fff;
+  /* --carousel-width: 300px; */ /* Removed for responsive design */
+  --carousel-height: 400px;
 }
 [data-tema=dark] {
   --bg-color: #040404;
